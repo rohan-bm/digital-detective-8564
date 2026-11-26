@@ -1,0 +1,51 @@
+# Privacy-safe Terminal evidence for Mission 2
+
+$ pwd
+/Users/[redacted]/... /digital-detective-8564
+
+$ ls
+README.md
+evidence
+mission-00-setup
+mission-01-computer-basics
+mission-02-terminal
+mission-03-operating-system
+mission-04-programs
+mission-05-numbers-data
+mission-06-git-github
+mission-07-networking
+mission-08-final-report
+
+$ cat terminal-practice/notes.txt
+First line added safely.
+Second line appended without overwriting.
+
+$ ls -lah terminal-practice
+total 16
+drwxr-xr-x@  5 [redacted]  staff   160B Nov 26 11:51 .
+drwxr-xr-x@ 15 [redacted]  staff   480B Nov 26 11:51 ..
+-rw-r--r--@  1 [redacted]  staff    67B Nov 26 11:51 notes-archive.txt
+-rw-r--r--@  1 [redacted]  staff    67B Nov 26 11:51 notes.txt
+-rw-r--r--@  1 [redacted]  staff     0B Nov 26 11:51 sample.txt
+
+$ ls -la | head -n 5
+total 8
+drwxr-xr-x@ 15 [redacted]  staff   480 Nov 26 11:51 .
+drwxr-xr-x@  3 [redacted]  staff    96 Nov 26 11:33 ..
+drwxr-xr-x@ 12 [redacted]  staff   384 Nov 26 11:50 .git
+-rw-r--r--@  1 [redacted]  staff  2231 Nov 26 11:33 README.md
+
+$ brew --version
+Homebrew 7.0.9
+
+$ brew list --formula | head -n 10
+ca-certificates
+dav1d
+ffmpeg
+gh
+lame
+libpng
+libvmaf
+libvpx
+mpg123
+openssl@4
