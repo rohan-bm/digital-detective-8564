@@ -36,3 +36,9 @@ This repository contains my mission-by-mission work for **The Digital Detective*
 ## Evidence Folder
 
 - [evidence/](evidence/) — Contains privacy-safe terminal outputs and verification records with all personal or network identifiers removed.
+
+## My Learning
+
+- **How computers coordinate hardware and software:** Tracing the IPOS cycle and inspecting processes showed how the operating system manages CPU time, memory, storage, and file permissions safely.
+- **Confidence with Terminal and version control:** Using commands like `pwd`, `ls -lah`, pipes (`|`), and Git commits makes navigating folders, automating checks, and tracking changes much faster and safer.
+- **How data is represented:** Converting between decimal, binary, and hexadecimal and building `number_converter.py` made it clear how computers store numbers and text using bits and encodings like ASCII and UTF-8.
