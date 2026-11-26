@@ -1,0 +1,21 @@
+# Privacy-safe Network evidence for Mission 7
+
+$ ping -c 3 example.com
+PING example.com (104.20.23.154): 56 data bytes
+64 bytes from 104.20.23.154: icmp_seq=0 ttl=58 time=5.452 ms
+64 bytes from 104.20.23.154: icmp_seq=1 ttl=58 time=7.032 ms
+64 bytes from 104.20.23.154: icmp_seq=2 ttl=58 time=19.384 ms
+
+--- example.com ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 5.452/10.623/19.384/6.229 ms
+
+$ nslookup example.com
+Server:		[redacted]
+Address:	[redacted]#53
+
+Non-authoritative answer:
+Name:	example.com
+Address: 172.66.147.243
+Name:	example.com
+Address: 104.20.23.154
