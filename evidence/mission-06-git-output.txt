@@ -1,0 +1,38 @@
+# Privacy-safe Git and Pull Request evidence for Mission 6
+
+$ git switch -c update-about
+Switched to a new branch 'update-about'
+
+$ git status
+On branch update-about
+Changes not staged for commit:
+	modified:   README.md
+
+$ git add README.md
+$ git commit -m "Add My Learning section to root README"
+[update-about 525cae2] Add My Learning section to root README
+ 1 file changed, 6 insertions(+)
+
+$ git push -u origin update-about
+To https://github.com/rohan-bm/digital-detective-8564.git
+ * [new branch]      update-about -> update-about
+
+$ gh pr create --base main --head update-about --title "Add My Learning section to root README"
+https://github.com/rohan-bm/digital-detective-8564/pull/1
+
+$ git switch main
+Switched to branch 'main'
+
+$ git branch -a
+* main
+  update-about
+  remotes/origin/main
+  remotes/origin/update-about
+
+$ git log --oneline -n 6
+594fdff (HEAD -> main, origin/main) Build number converter and practise data representation
+94f4b69 Compare compilers and interpreters
+635d7a1 Document operating system and file management
+735904d Complete Terminal and file management mission
+05810e3 Complete computer basics and IPOS mission
+351e72d Set up Digital Detective mission structure
