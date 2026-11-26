@@ -1,0 +1,29 @@
+# Python verification and number_converter.py test output for Mission 5
+
+$ python3 (verification checks)
+bin(13) = '0b1101'
+bin(25) = '0b11001'
+int('1010', 2) = 10
+int('1101', 2) = 13
+int('A', 16) = 10
+int('1F', 16) = 31
+hex(int('1111', 2)) = '0xf'
+hex(31) = '0x1f'
+ord('A') = 65
+ord('a') = 97
+
+$ python3 mission-05-numbers-data/number_converter.py
+Enter a decimal integer: 13
+Decimal: 13
+Binary: 0b1101 (without prefix: 1101)
+Hexadecimal: 0xd (without prefix: D)
+
+Enter a decimal integer: 25
+Decimal: 25
+Binary: 0b11001 (without prefix: 11001)
+Hexadecimal: 0x19 (without prefix: 19)
+
+Enter a decimal integer: 255
+Decimal: 255
+Binary: 0b11111111 (without prefix: 11111111)
+Hexadecimal: 0xff (without prefix: FF)
